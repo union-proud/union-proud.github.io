@@ -1,0 +1,28 @@
+{
+  "name": "union-website",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.liquid",
+  "browserslist": "defaults",
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.liquid",
+    "build": "parcel build ./src/index.liquid",
+    "serve": "parcel serve ./src/index.liquid"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@parcel/config-default": "^2.12.0",
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/plugin": "^2.12.0",
+    "@parcel/transformer-jsonld": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "academicons": "^1.9.2",
+    "bulma": "^1.0.0",
+    "liquidjs": "^10.12.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.12.0"
+  }
+}

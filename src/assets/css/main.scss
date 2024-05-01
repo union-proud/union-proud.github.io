@@ -1,0 +1,17 @@
+@use "/node_modules/bulma/versions/bulma-no-dark-mode.scss" with ($container-max-width: 1100px);
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+.column .card.candidate {
+  min-height: 540px;
+  // min-width: 287px;
+  max-height: 540px;
+  // max-width: 287px;
+
+  display: flex;
+  flex-direction: column;
+
+  .card-content {
+    flex: auto;
+  }
+}

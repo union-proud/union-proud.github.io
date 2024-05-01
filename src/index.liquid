@@ -1,0 +1,164 @@
+{% layout "default" %}
+
+{% block content %}
+<section id="intro" class="section hero is-primary">
+  <div class="container hero-body">
+    <h1 class="title is-1">Union PROUD for UAW Local 872</h1>
+    <!-- <h2 class="subtitle is-3"> Power in Representative Organizing and Union Democracy </h2> -->
+  </div>
+</section>
+<section id="our-platform" class="section hero is-info">
+  <div class="container hero-body content">
+    <h1>Our Platform</h1>
+
+    <h2>Our Team</h2>
+
+    <p>
+    We, the Union PROUD (Power in Representative Organizing and Union Democracy) slate,
+    are a diverse group of graduate student workers — international and domestic,
+    humanists and scientists, from UPC and HSC, from departments with 15 workers and
+    departments with 350 workers, and from every current cohort — running for the
+    executive board of our union. Our diversity reflects how our power to improve our
+    working conditions as graduate student workers fundamentally comes from our ability
+    to work together. As we move into this new phase of our local union, we are stepping
+    up as dedicated and ambitious organizers with the experience to hold USC
+    accountable.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+    Our shared vision of our union is to build long-term, sustainable structures to
+    democratically exercise our collective power as graduate students working for
+    a better workplace environment and as a community standing in solidarity with each
+    other. We know that winning our contract — a historic first for academic workers at
+    USC — is just the beginning: we are ready to build our Local Union from the ground
+    up by creating spaces for graduate student workers to build community and empower
+    leaders, developing clear processes and communication for organizing around
+    grievances, and ensuring all GSWs know their rights and the workings of our union.
+    </p>
+
+    <h2>Our Commitments</h2>
+    <p>
+    We are committed to building our movement through one-on-one organizing, organizing
+    on grievances, and democratizing our union. We are committed to building collective
+    power and fighting alongside our coworkers to stand up for our rights.
+    </p>
+
+    <h2>Our Power</h2>
+    <p>
+    Our power as a union comes from all of us. When we join together, we have the power
+    to stand up to USC when they violate our rights. By building a strong Local Union,
+    we also join in the labor movement with over 100,000 academic workers throughout
+    California and around the country. But all of that starts with us. We cannot wait to
+    continue building our union alongside you, and we hope we have your vote.
+    </p>
+  </div>
+</section>
+<section id="our-candidates" class="section hero is-danger">
+  <div class="container hero-body content">
+    <h1>Meet the Candidates</h1>
+    <div class="columns is-centered">
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Anand Balakrishnan",
+        dept: "Computer Science",
+        post: "President" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Anna Weiss",
+        dept: "Marine and Environmental Biology",
+        post: "Vice President" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Eleanor Batista-Malat",
+        dept: "Gerontology",
+        post: "Financial Secretary" 
+        %}
+    </div>
+    <div class="columns is-centered">
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Shenali Pilapitiya",
+        dept: "Political Science and International Relations",
+        post: "Recording Secretary" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "José Múzquiz",
+        dept: "Political Science and International Relations",
+        post: "Guide" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Daniel Delgado",
+        dept: "History",
+        post: "Sergeant-at-arms" 
+        %}
+    </div>
+    <div class="columns is-centered">
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Chuankai Cheng",
+        dept: "Marine and Environmental Biology",
+        post: "Trustee" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Clara Alvarez Caraveo",
+        dept: "Sociology",
+        post: "Trustee" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Seeta Rajpara",
+        dept: "Biomedical and Biological Sciences",
+        post: "Trustee" 
+        %}
+    </div>
+    <div class="columns is-centered">
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Kurt Woolford",
+        dept: "History",
+        post: "Head Steward" 
+        %}
+
+        {%
+        render 'candidate-card', 
+        img_path: "https://bulma.io/assets/images/placeholders/480x480.png",
+        name: "Connor Sauceda",
+        dept: "Civil and Environmental Engineering",
+        post: "Head Steward" 
+        %}
+
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="content has-text-centered">
+
+  </div>
+</section>
+{% endblock %}
