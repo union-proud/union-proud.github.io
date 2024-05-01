@@ -11,9 +11,10 @@ defaults:
     shell: bash -leo pipefail {0}
 
 jobs:
-  install:
+  page:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
