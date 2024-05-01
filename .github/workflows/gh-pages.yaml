@@ -1,6 +1,14 @@
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - dev
+      - main
+  pull_request:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash -leo pipefail {0}
 
 jobs:
   install:
@@ -21,6 +29,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/dev' || startsWith(github.ref, 'refs/tags/')
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: dist/
