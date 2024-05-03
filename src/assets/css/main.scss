@@ -1,12 +1,67 @@
-@use "/node_modules/bulma/versions/bulma-no-dark-mode.scss" with ($container-max-width: 1100px);
+$usccardinal: #990000;
+$uscgold: #FFCC00;
+@use "/node_modules/bulma/versions/bulma-no-dark-mode.scss" with ($container-max-width: 1100px,
+  $custom-colors: ("usccardinal": $usccardinal,
+    "uscgold": $uscgold,
+  ));
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 
+section {
+
+  .site-title {
+    @extend .title;
+    font-size: 4rem;
+  }
+
+  .section-header {
+    @extend .title;
+    @extend .is-1;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  &#intro {
+    background-color: $usccardinal;
+    color: $uscgold;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $uscgold;
+    }
+  }
+
+  &#our-candidates {
+    background-color: #cccccc;
+  }
+
+  &#election-info {
+    background-color: $uscgold;
+    color: $usccardinal;
+
+    .content {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        color: $usccardinal;
+      }
+    }
+  }
+}
+
 .column .card.candidate {
-  min-height: 540px;
-  // min-width: 287px;
-  max-height: 540px;
-  // max-width: 287px;
+  min-height: 640px;
+  max-height: 640px;
+  // height: 100%;
 
   display: flex;
   flex-direction: column;

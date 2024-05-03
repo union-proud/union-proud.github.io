@@ -1,7 +1,7 @@
-<div class="column is-one-third">
+<div class="column is-half-tablet is-one-third-desktop">
   <div class="card candidate">
     <div class="card-image">
-      <figure class="image is-1by1">
+      <figure class="image is-4by5">
         <img
             src="{{ img_path }}"
             alt="Profile image for {{ name }}"
@@ -9,12 +9,12 @@
       </figure>
     </div>
     <div class="card-content is-centered">
-      <h3 class="title">{{ name }}</h3>
-      <h4 class="subtitle">{{ dept }}</h4>
       <h4 class="subtitle">{{ post }}</h4>
+      <h3 class="title">{{ name }}</h3>
+      <h4>{{ dept }}</h4>
     </div>
      <footer class="card-footer">
-      <a href="{{ statement | default: "#" }}" class="card-footer-item">Candidate Statement&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a target="_blank" href="{{ statement | default: "#" }}" class="card-footer-item">Candidate Statement&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </footer>
   </div>
 </div>
