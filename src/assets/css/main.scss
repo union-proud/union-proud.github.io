@@ -12,6 +12,7 @@ section {
   .site-title {
     @extend .title;
     font-size: 4rem;
+    word-break: keep-all;
   }
 
   .section-header {
